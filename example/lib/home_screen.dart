@@ -17,14 +17,18 @@ class HomeScreen extends StatelessWidget {
       alignment: MergeTableAlignment.center,
       rowHeight: 80,
       columns: [
-        MColumn(header: "Pump"),
-        MColumn(header: "Product"),
-        MColumn(header: "Seal"),
+        MColumn(header: const Text("Pump")),
+        MColumn(header: const Text("Product")),
+        MColumn(header: const Text("Seal")),
         MMergedColumns(
-          header: "Reading",
-          columns: ["Before", "Then", "After"],
+          header: const Text("Reading"),
+          columns: [
+            const Text("Before"),
+            const Text("Then"),
+            const Text("After")
+          ],
         ),
-        MColumn(header: "Write"),
+        MColumn(header: const Text("Write")),
       ],
       rows: [
         [
