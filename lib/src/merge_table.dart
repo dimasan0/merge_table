@@ -63,6 +63,10 @@ class MergeTable extends StatelessWidget {
       (index) {
         List<BaseMRow> values = rows[index];
         return TableRow(
+          decoration: BoxDecoration(
+              color: index % 2 == 0
+                  ? const Color.fromARGB(255, 248, 250, 252)
+                  : const Color.fromARGB(255, 241, 245, 249)),
           children: List.generate(
             values.length,
             (index) {
