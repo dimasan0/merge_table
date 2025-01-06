@@ -32,7 +32,7 @@ class MergeTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Table(
       border: TableBorder.all(color: borderColor),
-      columnWidths: columnWidths,
+      // columnWidths: columnWidths,
       defaultVerticalAlignment: defaultVerticalAlignment,
       children: [
         buildHeader(),
@@ -105,7 +105,7 @@ class MergeTable extends StatelessWidget {
         );
       });
       return Container(
-        height: rowHeight,
+        // height: rowHeight,
         child: IntrinsicHeight(
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -127,10 +127,7 @@ class MergeTable extends StatelessWidget {
   }
 
   Widget buildAlign(Widget child) {
-    return Container(
-      alignment: alignmentGeometry,
-      child: child,
-    );
+    return child;
   }
 
   Map<int, TableColumnWidth> fetchColumnWidths(List<BaseMColumn> columns) {
