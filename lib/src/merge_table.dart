@@ -11,7 +11,7 @@ class MergeTable extends StatelessWidget {
   }) : super(key: key) {
     columnWidths = fetchColumnWidths(columns);
     assert(columns.isNotEmpty);
-    assert(rows.isNotEmpty);
+    // assert(rows.isNotEmpty);
     for (List<BaseMRow> row in rows) {
       assert(row.length == columns.length);
     }
